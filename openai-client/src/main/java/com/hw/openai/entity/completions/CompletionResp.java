@@ -18,6 +18,8 @@
 
 package com.hw.openai.entity.completions;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import lombok.Data;
 
 import java.util.List;
@@ -27,6 +29,7 @@ import java.util.List;
  * @author HamaWhite
  */
 @Data
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class CompletionResp {
 
     private String id;
