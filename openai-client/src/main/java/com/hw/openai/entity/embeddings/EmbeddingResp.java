@@ -18,6 +18,7 @@
 
 package com.hw.openai.entity.embeddings;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.hw.openai.entity.completions.Usage;
 
 import lombok.Data;
@@ -29,6 +30,7 @@ import java.util.List;
  * @author HamaWhite
  */
 @Data
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class EmbeddingResp {
 
     private String object;
