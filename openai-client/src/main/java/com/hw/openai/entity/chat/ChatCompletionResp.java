@@ -19,6 +19,7 @@
 package com.hw.openai.entity.chat;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.hw.openai.entity.completions.Usage;
 
 import lombok.Data;
@@ -30,6 +31,7 @@ import java.util.List;
  * @author HamaWhite
  */
 @Data
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class ChatCompletionResp {
 
     private String id;
